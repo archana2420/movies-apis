@@ -1,0 +1,45 @@
+APIs
+
+1) To fetch complete details of a movie by movie title
+    URI:http://localhost:4000/api/movies/get-movie-by-title?search={title}
+    method:GET 
+
+2) To fetch all the movies released in specific year
+    URI:http://localhost:4000/api/movies/get-movies-by-year?search={year}
+    method:GET 
+
+3) To fetch all the movies based on their genre
+    URI:http://localhost:4000/api/movies/get-movies-by-genre?search={genre}
+    method:GET 
+
+4) To delete a specific movie from its title
+    URI:http://localhost:4000/api/movies/delete-movie-by-title
+    request.body = {
+        "title":"Enter title of movie"
+    }
+    method:DELETE
+
+5) To Update a movie details by considering its title
+    URI:http://localhost:4000/api/movies/update-movie-by-title?search={title}
+    method:PUT
+
+6) To add a new movie with its details
+    URI:http://localhost:4000/api/movies/add-new-movie
+    request.body = {
+        "adult": Boolean,
+        "backdrop_path": String,
+        "id": Number,
+        "title": String,
+        "original_language": String,
+        "original_title": String,
+        "overview": String,
+        "poster_path": String,
+        "media_type": String,
+        "genre_ids": Array,
+        "popularity": mongoose.Decimal128,
+        "release_date": String,
+        "video": Boolean,
+        "vote_average": mongoose.Decimal128,
+        "vote_count": Number
+        }
+    method:POST
