@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 
 const mongoose = require("mongoose")
-const URI = 'mongodb+srv://test:test@cluster0.ttzscl0.mongodb.net/AssignmentDB'
+const URI = ''
 
 mongoose.connect(URI)
 
